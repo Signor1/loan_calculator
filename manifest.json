@@ -1,0 +1,36 @@
+{
+    "manifest_version": 3,
+    "name": "Loan EMI Calculator",
+    "version": "1.0",
+    "description": "Loan EMI Calculator gives you a run down of your loan based on the duration; interests, principal amount, total amount etc",
+    "icons": {
+        "128": "icon.png"
+    },
+    "action": {
+        "default_popup": "popup.html"
+    },
+    "permissions": [
+        "storage"
+    ],
+    "host_permissions": [
+        "<all_urls>"
+    ],
+    "web_accessible_resources": [
+        {
+            "resources": [
+                "https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"
+            ],
+            "matches": [
+                "<all_urls>"
+            ]
+        },
+        {
+            "resources": [
+                "./*"
+            ],
+            "matches": [
+                "<all_urls>"
+            ]
+        }
+    ]
+}
